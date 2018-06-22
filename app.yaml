@@ -1,0 +1,14 @@
+service: uploadimage
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+env_variables:
+
+handlers:
+- url: /image
+  static_dir: image
+
+- url: /.*
+  script: main.app
+
