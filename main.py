@@ -56,7 +56,7 @@ class UploadHandler(webapp2.RequestHandler):
         uploaded_file_content = uploaded_file.file.read()
         uploaded_file_filename = uploaded_file.filename
         uploaded_file_type = uploaded_file.type
-        bucket_name ='hn-avatars'        
+        bucket_name ='YOUR-BUCKET-NAME'        
         #bucket_name = os.environ.get('BUCKET_NAME', app_identity.get_default_gcs_bucket_name())
         
         # This write_retry_params params bit isn't essential, but Google's examples recommend it
